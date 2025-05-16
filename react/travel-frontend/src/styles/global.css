@@ -1,0 +1,430 @@
+/* global.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #0052cc;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0052cc;
+  outline: none;
+}
+
+button {
+  background-color: #0052cc;
+  border: none;
+  color: white;
+  padding: 12px 0;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003d99;
+}
+
+.error {
+  color: #d32f2f;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+/* Add to your global.css or create admin-dashboard.css and import */
+
+.admin-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-title {
+  text-align: center;
+  color: #004085;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.admin-table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.admin-table tr:hover {
+  background-color: #e9f2ff;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
+
+.btn-approve {
+  background-color: #28a745;
+}
+
+.btn-approve:hover {
+  background-color: #218838;
+}
+
+.btn-reject {
+  background-color: #dc3545;
+}
+
+.btn-reject:hover {
+  background-color: #c82333;
+}
+
+.no-action-text {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #004aad;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Navbar individual links (Dashboard, New Request) */
+.navbar-links a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffcc00;
+}
+
+/* Logout button styling */
+.logout-btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 80px;
+  max-width: 100px;
+}
+
+.logout-btn:hover {
+  background-color: #003d7a;
+}
+
+/* Table styling for admin dashboard */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* View Details link styling */
+.view-details-link {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.view-details-link:hover {
+  color: #003d7a;
+  text-decoration: none;
+}
+
+.detail-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #004aad;
+  font-weight: 700;
+}
+
+.detail-box > div {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.detail-box > div:last-child {
+  border-bottom: none;
+}
+
+.status {
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.status.pending {
+  background-color: #ff9800; /* orange */
+}
+
+.status.approved {
+  background-color: #4caf50; /* green */
+}
+
+.status.rejected {
+  background-color: #f44336; /* red */
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #002d72;
+  text-decoration: underline;
+}
+
+.user-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  background: white;
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.user-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.user-table tr:hover {
+  background-color: #e9f2ff;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.status.pending {
+  background-color: #ff9800;
+}
+
+.status.approved {
+  background-color: #4caf50;
+}
+
+.status.rejected {
+  background-color: #f44336;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container h2 {
+  color: #004aad;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-container form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.form-container button {
+  background-color: #0052cc;
+  border: none;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #003d99;
+}
+
+.success {
+  color: #2e7d32;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
